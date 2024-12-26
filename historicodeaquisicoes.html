@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Aquisições</title>
+    <link rel="stylesheet" href="historicodeaquisicoes.css">
+    <script src="estrelinha.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <nav class="logo">
+            <p>MyBarbie Collection</p>
+        </nav>
+        <nav class="navbar">
+
+            <ul class="menu">
+                <a href="index.html">Página Inicial</a>
+                <a href="cadastro.html">Cadastro de Usuário</a>
+                <a href="gerenciamento.html">Gerenciamento de Coleções</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="historicodeaquisicoes.html">Histórico de Aquisições</a>
+                <a href="galeriadeimagens.html">Galeria de Imagens</a>
+                <a href="perfil.html"><i class="fas fa-user-circle"></i> Perfil</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <div class="bem-vindo">
+                <img src="barbie-png-41.png" alt="barbiePNGHistoricoDeAquisições" width="200" height="450">
+                <h1>Histórico de Aquisições <p>Gerencie suas aquisições, incluindo detalhes e notas.</p></h1>
+                <button id="adicionarAquisicao" class="btn">Adicionar Aquisição</button>
+            </div>
+        </section>
+
+        <section class="historico">
+            <div class="container">
+                <ul id="listaHistorico" class="historico-lista">
+                    <!-- Itens do histórico aparecerão aqui dinamicamente -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="historicodeaquisicoes.js"></script>
+</body>
+<footer class="footer">
+    <p>&copy;  2024 MyBarbie Collection. Todos os direitos reservados.</p>
+    
+</footer>
+
+</html>

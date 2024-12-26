@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="cadastrostyle.css">
+  <script src="cadastroscript.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+    <div class="container">
+         <!-- Cabeçalho -->
+  <header class="header">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <nav class="logo">
+      <p>MyBarbie Collection</p>
+    </nav>
+    <nav class="navbar">
+
+      <ul class="menu">
+        <a href="index.html">Página Inicial</a>
+        <a href="cadastro.html">Cadastro de Usuário</a>
+        <a href="gerenciamento.html">Gerenciamento de Coleções</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="historicodeaquisicoes.html">Histórico de Aquisições</a>
+        <a href="galeriadeimagens.html">Galeria de Imagens</a>
+        <a href="perfil.html"><i class="fas fa-user-circle"></i> Perfil</a>
+      </ul>
+    </nav>
+  <body>
+   <!-- Sessão de Destaque -->
+    <div class="inicio">
+      <section id="cadastro" class="highlights"></section>
+    <div>
+      <img src="71qp16sPNZL._AC_UF1000,1000_QL80_.jpg" alt="barbiePNGCadastro" width="500" height="500">
+    </div>
+   
+    <div class="container">
+     <h1 class="title">Começando agora?</h1>
+     <h2> Bora se cadastrar!</h2>
+      <form id="cadastroForm" class="form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Seu Nome" required><p></p>
+        
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Seu E-mail" required><p></p>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Sua Senha" required>
+        <button type="button" id="toggleSenha" class="toggle-btn">👁️</button><p></p>
+        
+        <label for="confirmaSenha">Confirme a Senha:</label>
+        <input type="password" id="confirmaSenha" placeholder="Confirme Sua Senha" required>
+        <button type="button" id="toggleConfirmaSenha" class="toggle-btn">👁️</button>
+        
+        <p id="erroSenha" class="error-message" style="display: none;"><b>As senhas não coincidem. Tente novamente.</p></b>
+        <p id="erroRequisitos" class="error-message" style="display: none;"><b>A senha deve ter pelo menos 8 caracteres e conter letras maiúsculas e minúsculas.</p></b>
+        
+        <button type="submit" class="btn">Cadastrar</button>
+
+      </form>
+    </div>
+  </section>
+</div>
+
+  <script src="cadastroscript.js"></script>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      
+      <p>&copy; 2024 MyBarbie Collection. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html> 

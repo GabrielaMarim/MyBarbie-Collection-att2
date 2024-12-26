@@ -1,0 +1,172 @@
+/* Geral */
+body {
+    font-family: 'Dancing Script', 'Comic Sans MS', cursive;
+      padding: 0px 110px;
+
+      color: #fff;
+      background: #ff69b4;
+      transition: 0.3s ease;
+    }
+     /* Estilo das estrelinhas */
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    clip-path: polygon(
+      50% 90%, 
+      61% 35%, 
+      98% 35%, 
+      68% 57%, 
+      79% 91%, 
+      50% 70%, 
+      21% 91%, 
+      32% 57%, 
+      2% 35%, 
+      39% 35%
+    ); /* Forma de estrela */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: fade-out 1s ease-out forwards, move-down 1s ease-out;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes move-down {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+    
+    
+    /* Cabeçalho */
+    .header {
+      color: #fff;
+      
+      
+    }
+    .logo{
+      display: flex;
+      padding: 1px;
+  font-size: 40px;
+    
+    }
+    .navbar {
+      background-color: #ff69b4;
+    }
+    
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 150px;
+    }
+    
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    
+    .menu li a:hover {
+      text-decoration: underline;
+    }
+    
+    .header .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    
+    .header .subtitle {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    
+    .header .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background: #ff69b4;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s ease;
+    }
+    
+    
+  
+  /* Galeria */
+  .inicio{
+    display: flex;
+  background-color: #ffa4d2;
+  padding: 60px;
+  gap: 20px;
+  font-size: 40px;
+
+  }
+  
+  
+  .container{
+    background-color: #ffa4d2;
+}
+.bem-vindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4rem;
+     }
+  
+  .gallery {
+   display: flex;
+  background-color: #ffa4d2;
+  padding: 60px;
+  gap: 20px;
+  font-size: 40px;
+  }
+  
+  .gallery-item {
+    background-color: #ffa4d2;
+    border: 2px solid #f552a4;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+   /* Rodapé */
+   .footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: #ff69b4;
+    color: #fff;
+    font-size: 1rem;
+  }
